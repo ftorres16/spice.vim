@@ -5,7 +5,6 @@
 " This is based on https://github.com/1995parham/vim-spice
 
 if exists("b:current_syntax")
-	echom "Spice syntax won't be loaded"
 	finish
 endif
 
@@ -139,13 +138,14 @@ syn keyword spiceFunc pwl
 syn match   spiceWrapLineOperator       "\\$"
 syn match   spiceWrapLineOperator       "^+"
 
-" syn match   spiceStatement      "^ \=\.\I\+"
-
 
 " Matching pairs of parentheses
 syn region  spiceParen transparent matchgroup=spiceOperator start="(" end=")" contains=ALLBUT,spiceParenError
 syn region  spiceSinglequote matchgroup=spiceOperator start=+'+ end=+'+
 
+
+" Strings
+syntax region spiceString start=/\v"/ skip=/\v\\./ end=/\v"/
 
 " Errors
 syn match spiceParenError ")"
@@ -174,6 +174,7 @@ highlight link spiceOutput		Statement
 highlight link spiceSetUp		Define
 highlight link spiceSubCkt		Structure
 highlight link spiceStatement		Statement
+highlight link spiceString		String
 highlight link spiceTodo		Todo
 highlight link spiceParenError		Error
 
