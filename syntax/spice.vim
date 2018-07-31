@@ -43,86 +43,86 @@ syn match spiceElement "^d\S*" " Diode
 
 
 " Models
-syn match spiceModel "\.model"
-syn match spiceModel "\.malias"
+syn match spiceModel "\.model\>"
+syn match spiceModel "\.malias\>"
 syn keyword spiceModelType nmos pmos NPN PNP D njf pjf
 
 
 " Subcircuits
-syn match spiceSubCkt "\.ends"
-syn match spiceSubCkt "\.eom"
-syn match spiceSubCkt "\.include" 
-syn match spiceSubCkt "\.macro"
-syn match spiceSubCkt "\.model"
-syn match spiceSubCkt "\.subckt"
+syn match spiceSubCkt "\.ends\>"
+syn match spiceSubCkt "\.eom\>"
+syn match spiceSubCkt "\.include\>"
+syn match spiceSubCkt "\.macro\>"
+syn match spiceSubCkt "\.model\>"
+syn match spiceSubCkt "\.subckt\>"
 
 
 " Analysis
-syn match spiceAnal "\.ac"
-syn match spiceAnal "\.dc"
-syn match spiceAnal "\.dcmatch"
-syn match spiceAnal "\.disto"
-syn match spiceAnal "\.fft"
-syn match spiceAnal "\.four"
-syn match spiceAnal "\.lin"
-syn match spiceAnal "\.net"
-syn match spiceAnal "\.noise"
-syn match spiceAnal "\.op"
-syn match spiceAnal "\.pat"
-syn match spiceAnal "\.pz"
-syn match spiceAnal "\.sample"
-syn match spiceAnal "\.sense"
-syn match spiceAnal "\.temp"
-syn match spiceAnal "\.tf"
-syn match spiceAnal "\.tran"
+syn match spiceAnal "\.ac\>"
+syn match spiceAnal "\.dc\>"
+syn match spiceAnal "\.dcmatch\>"
+syn match spiceAnal "\.disto\>"
+syn match spiceAnal "\.fft\>"
+syn match spiceAnal "\.four\>"
+syn match spiceAnal "\.lin\>"
+syn match spiceAnal "\.net\>"
+syn match spiceAnal "\.noise\>"
+syn match spiceAnal "\.op\>"
+syn match spiceAnal "\.pat\>"
+syn match spiceAnal "\.pz\>"
+syn match spiceAnal "\.sample\>"
+syn match spiceAnal "\.sense\>"
+syn match spiceAnal "\.temp\>"
+syn match spiceAnal "\.tf\>"
+syn match spiceAnal "\.tran\>"
 
 
 " Simulation Runs
-syn match spiceAnal "\.end"
-syn match spiceAnal "\.temp"
-syn match spiceAnal "\.title"
+syn match spiceAnal "\.end\>"
+syn match spiceAnal "\.temp\>"
+syn match spiceAnal "\.title\>"
 
 
 " Library Management
-syn match spiceLibManagement "\.del lib"
-syn match spiceLibManagement "\.endl"
-syn match spiceLibManagement "\.include"
-syn match spiceLibManagement "\.lib"
-syn match spiceLibManagement "\.protect"
-syn match spiceLibManagement "\.unprotect"
+syn match spiceLibManagement "\.del lib\>"
+syn match spiceLibManagement "\.endl\>"
+syn match spiceLibManagement "\.include\>"
+syn match spiceLibManagement "\.lib\>"
+syn match spiceLibManagement "\.protect\>"
+syn match spiceLibManagement "\.unprotect\>"
 
 
 " Output
-syn match spiceOutput "\.biaschk"
-syn match spiceOutput "\.dout"
-syn match spiceOutput "\.graph"
-syn match spiceOutput "\.measure"
-syn match spiceOutput "\.plot"
-syn match spiceOutput "\.print"
-syn match spiceOutput "\.probe"
-syn match spiceOutput "\.stim"
-syn match spiceOutput "\.width"
+syn match spiceOutput "\.biaschk\>"
+syn match spiceOutput "\.dout\>"
+syn match spiceOutput "\.graph\>"
+syn match spiceOutput "\.measure\>"
+syn match spiceOutput "\.plot\>"
+syn match spiceOutput "\.print\>"
+syn match spiceOutput "\.probe\>"
+syn match spiceOutput "\.stim\>"
+syn match spiceOutput "\.width\>"
 
 
 " Setup
-syn match spiceSetUp "\.data"
-syn match spiceSetUp "\.dcvolt"
-syn match spiceSetUp "\.enddata"
-syn match spiceSetUp "\.global"
-syn match spiceSetUp "\.ic"
-syn match spiceSetUp "\.load"
-syn match spiceSetUp "\.nodeset"
-syn match spiceSetUp "\.option"
-syn match spiceSetUp "\.param"
-syn match spiceSetUp "\.save"
-syn match spiceSetUp "\.title"
+syn match spiceSetUp "\.data\>"
+syn match spiceSetUp "\.dcvolt\>"
+syn match spiceSetUp "\.enddata\>"
+syn match spiceSetUp "\.global\>"
+syn match spiceSetUp "\.ic\>"
+syn match spiceSetUp "\.load\>"
+syn match spiceSetUp "\.nodeset\>"
+syn match spiceSetUp "\.option\>"
+syn match spiceSetUp "\.param\>"
+syn match spiceSetUp "\.save\>"
+syn match spiceSetUp "\.title\>"
 
 
 " Conditionals
-syn match spiceConditional "\.if"
-syn match spiceConditional "\.elseif"
-syn match spiceConditional "\.else"
-syn match spiceConditional "\.endif"
+syn match spiceConditional "\.if\>"
+syn match spiceConditional "\.elseif\>"
+syn match spiceConditional "\.else\>"
+syn match spiceConditional "\.endif\>"
 
 
 " Functions
