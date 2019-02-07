@@ -1,1 +1,1 @@
-au BufNewFile,BufRead *.spc set filetype=spice
+au BufNewFile,BufRead *.spc,*.sp set filetype=spice
